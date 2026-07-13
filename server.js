@@ -5,7 +5,7 @@ const apiServer = require("./api");
 const httpServer = http.createServer(apiServer);
 const socketServer = io(httpServer, {
   cors: {
-    origin: "*",
+    origin: "https://pong.scorpionshadow.com",
     methods: ["GET", "POST"],
   },
 });
