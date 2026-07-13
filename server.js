@@ -12,9 +12,8 @@ const socketServer = io(httpServer, {
 
 const sockets = require("./sockets");
 
-const PORT = 3000;
+const PORT = 8002;
 httpServer.listen(PORT);
 console.log(`Server is running on port http://localhost:${PORT}`);
 
 sockets.listen(socketServer);
-

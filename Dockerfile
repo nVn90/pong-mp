@@ -12,8 +12,9 @@ RUN npm ci --only=production
 # Copy the rest of the application source code
 COPY . .
 
-# Expose port 3000 (as defined in server.js)
-EXPOSE 3000
+# Expose port 8002 (as defined in server.js)
+ENV PORT=8002
+EXPOSE 8002
 
 # Start the application
 CMD ["npm", "start"]
